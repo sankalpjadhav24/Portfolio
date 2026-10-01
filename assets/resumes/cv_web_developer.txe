@@ -1,0 +1,113 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.45in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{tabularx}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=navyblue,
+    urlcolor=navyblue,
+}
+
+\definecolor{navyblue}{RGB}{0, 51, 102}
+\definecolor{darkgray}{RGB}{60, 60, 60}
+
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+
+\titleformat{\section}{\large\bfseries\color{navyblue}}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+
+\begin{document}
+
+\begin{center}
+    {\Huge \textbf{\color{navyblue} SANKALP JADHAV}} \\[3pt]
+    {\small \textbf{Web Developer $|$ Java Developer $|$ Python Developer}} \\[3pt]
+    {\footnotesize \textbf{Email:} \href{mailto:sankalpjadhav2409@gmail.com}{sankalpjadhav2409@gmail.com} \,|\, \textbf{Phone:} +91 8010411324 \,|\, \textbf{Location:} Pune, Maharashtra, India \\ \textbf{LinkedIn:} \href{https://linkedin.com/in/sankalpjadhav24}{linkedin.com/in/sankalpjadhav24} \,|\, \textbf{GitHub:} \href{https://github.com/sankalpjadhav24}{github.com/sankalpjadhav24}}
+\end{center}
+
+\vspace{-4pt}
+
+\section*{PROFESSIONAL SUMMARY}
+{\small Versatile B.E. Computer Engineering student with comprehensive training in web engineering standards, database management, and interactive application design. Experienced in developing end-to-end web system prototypes from initial database schema creation to dynamic server rendering. Combines systematic engineering practices with continuous learning in modern web stacks.}
+
+\section*{TECHNICAL SKILLS}
+{\small
+\begin{itemize}[leftmargin=1.0em, itemsep=2pt, parsep=0pt, topsep=2pt]
+    \item \textbf{Frontend Development:} HTML5, CSS3, JavaScript (ES6+), DOM Manipulation, Responsive Design
+    \item \textbf{Backend \& Database:} Java Servlets, Core Java, JDBC, Apache Tomcat, MySQL, Relational Schemas
+    \item \textbf{Active Framework Learning:} React (JSX, Hooks), Spring Boot (REST APIs), Hibernate (ORM)
+    \item \textbf{Developer Tools:} Git, GitHub, VS Code, Eclipse, MySQL Workbench, Postman, Linux Terminal
+\end{itemize}
+}
+
+\section*{EDUCATION}
+{\small
+\textbf{SAVITRIBAI PHULE PUNE UNIVERSITY (DPCOE)} \hfill Pune, Maharashtra, India \\
+\textit{Bachelor of Engineering (B.E.) in Computer Engineering} \hfill \textit{Expected Aug 2027} \\
+\textbullet{} \textbf{CGPA:} 6.00 / 10.00 \,|\, \textbf{Focus:} Software Engineering, Web Systems, Data Structures
+
+\vspace{3pt}
+\textbf{MAHARASHTRA STATE BOARD OF SECONDARY \& HIGHER SECONDARY EDUCATION} \hfill Pune, India \\
+\textit{Higher Secondary Certificate (HSC - 12th Grade)} \hfill \textit{Completed 2023} \\
+\textbullet{} \textbf{Percentage Score:} 62.17\% \,|\, \textbf{Stream:} Science (Physics, Chemistry, Mathematics)
+
+\vspace{3pt}
+\textbf{MAHARASHTRA STATE BOARD OF SECONDARY \& HIGHER SECONDARY EDUCATION} \hfill Pune, India \\
+\textit{Secondary School Certificate (SSC - 10th Grade)} \hfill \textit{Completed 2021} \\
+\textbullet{} \textbf{Percentage Score:} 86.80\% \,|\, \textbf{Distinction Achievement}
+}
+
+\section*{SOFTWARE PROJECTS}
+{\small
+\textbf{Java Web \& Database Systems Prototype} $|$ \textit{Java, Servlets, JDBC, Apache Tomcat, MySQL, HTML/CSS} \hfill \href{https://github.com/sankalpjadhav24}{GitHub Link}
+\begin{itemize}[leftmargin=1.2em, itemsep=1.5pt, parsep=0pt, topsep=1pt]
+    \item Engineered dynamic client-server web application using Core Java Servlets following Model-View-Controller (MVC) architecture.
+    \item Established secure database connectivity via JDBC drivers to execute parameterized SQL queries in MySQL database.
+    \item Configured Apache Tomcat application server to handle concurrent HTTP requests, session tracking, and response rendering.
+\end{itemize}
+\vspace{3pt}
+\textbf{FinXpert — Financial Analytical Platform} $|$ \textit{Python, Java, APIs, Data Pipelines, Git} \hfill \href{https://github.com/sankalpjadhav24}{GitHub Link}
+\begin{itemize}[leftmargin=1.2em, itemsep=1.5pt, parsep=0pt, topsep=1pt]
+    \item Collaborated in a 3-member engineering team during FinEdge Hackathon to build a real-time financial analytical dashboard.
+    \item Integrated market volatility index feeds and engineered failover data caching pipelines to maintain system resilience.
+\end{itemize}
+\vspace{3pt}
+\textbf{MindWar Arena — Modular Strategic Game Engine} $|$ \textit{Python, OOP, Minimax, Automated Testing} \hfill \href{https://github.com/sankalpjadhav24}{GitHub Link}
+\begin{itemize}[leftmargin=1.2em, itemsep=1.5pt, parsep=0pt, topsep=1pt]
+    \item Designed modular board game platform in Python supporting 9 deterministic strategy games with custom heuristic evaluation.
+    \item Implemented Minimax search algorithm with alpha-beta pruning to simulate intelligent opponent decision-making loops.
+    \item Built automated unit test suite validating state transition integrity, turn enforcement, and edge-case game resolution.
+\end{itemize}
+\vspace{3pt}
+\textbf{StockMarket AI — Deep Learning Trend Forecaster} $|$ \textit{Python, PyTorch, LSTM, Pandas, Tkinter} \hfill \href{https://github.com/sankalpjadhav24}{GitHub Link}
+\begin{itemize}[leftmargin=1.2em, itemsep=1.5pt, parsep=0pt, topsep=1pt]
+    \item Developed time-series deep learning model in PyTorch employing LSTM layers for stock price movement analysis.
+    \item Preprocessed historical financial datasets using MinMaxScaler, engineering technical indicators (SMA, RSI) for training.
+    \item Integrated evolutionary algorithm for portfolio weight optimization and constructed interactive Tkinter GUI interface.
+\end{itemize}
+}
+
+\section*{CORE SYSTEMS FOUNDATIONS}
+{\small
+\begin{itemize}[leftmargin=1.0em, itemsep=2pt, parsep=0pt, topsep=2pt]
+    \item \textbf{Core Computer Science:} Object-Oriented Analysis \& Design (OOAD), Data Structures \& Algorithms, Software Testing
+    \item \textbf{Database \& Web Architecture:} Relational Database Design, SQL Normalization, HTTP Request/Response Cycle, MVC Pattern
+    \item \textbf{Operating Systems \& Networks:} Linux Kernel Basics, Process Management, Memory Allocation, TCP/IP Protocol Stack
+\end{itemize}
+}
+
+\section*{ACTIVITIES \& LEADERSHIP}
+{\small
+\begin{itemize}[leftmargin=1.0em, itemsep=2pt, parsep=0pt, topsep=2pt]
+    \item \textbf{National Service Scheme (NSS):} Active student volunteer; organized rural development camps, community welfare initiatives, and social awareness drives across local districts.
+    \item \textbf{College Cybersecurity Club:} Active student member; participated in technical workshops covering network security fundamentals, ethical hacking concepts, and OS hardening practices.
+\end{itemize}
+}
+
+\end{document}

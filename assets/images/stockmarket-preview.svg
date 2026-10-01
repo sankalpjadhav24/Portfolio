@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="stkBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1024" />
+      <stop offset="100%" stop-color="#050814" />
+    </linearGradient>
+    <pattern id="stkGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.75" stroke-opacity="0.35" />
+    </pattern>
+  </defs>
+
+  <rect width="800" height="480" fill="url(#stkBg)" />
+  <rect width="800" height="480" fill="url(#stkGrid)" />
+
+  <!-- Technical Header -->
+  <rect x="30" y="24" width="740" height="44" rx="8" fill="#111827" stroke="#1e293b" stroke-width="1.2" />
+  <circle cx="56" cy="46" r="5" fill="#ef4444" />
+  <circle cx="74" cy="46" r="5" fill="#f59e0b" />
+  <circle cx="92" cy="46" r="5" fill="#10b981" />
+  <text x="120" y="50" font-family="'JetBrains Mono', monospace" font-size="13" fill="#94a3b8">stock_ai :: lstm_model_forecaster.py [PyTorch Engine]</text>
+  <rect x="625" y="34" width="130" height="24" rx="4" fill="#0369a1" fill-opacity="0.25" stroke="#38bdf8" stroke-width="0.8" />
+  <text x="690" y="50" font-family="'JetBrains Mono', monospace" font-size="11" fill="#38bdf8" text-anchor="middle" font-weight="600">PYTORCH CORE</text>
+
+  <!-- Flow Block 1: Sequence Processing -->
+  <rect x="40" y="100" width="200" height="150" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+  <rect x="40" y="100" width="200" height="32" rx="8" fill="#1e293b" />
+  <text x="55" y="122" font-family="'JetBrains Mono', monospace" font-size="12" fill="#38bdf8" font-weight="bold">01 :: PREPROCESSING</text>
+  <text x="55" y="152" font-family="'JetBrains Mono', monospace" font-size="11" fill="#cbd5e1">• Historical Price Time-Series</text>
+  <text x="55" y="174" font-family="'JetBrains Mono', monospace" font-size="11" fill="#cbd5e1">• MinMaxScaler Normalization</text>
+  <text x="55" y="196" font-family="'JetBrains Mono', monospace" font-size="11" fill="#cbd5e1">• Technical Indicators: RSI, SMA</text>
+  <text x="55" y="218" font-family="'JetBrains Mono', monospace" font-size="11" fill="#cbd5e1">• 60-Day Sliding Windows</text>
+
+  <!-- Flow 1 to 2 -->
+  <path d="M 240 175 L 290 175" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 4" />
+  <polygon points="290,171 300,175 290,179" fill="#38bdf8" />
+
+  <!-- Flow Block 2: PyTorch LSTM Network -->
+  <rect x="300" y="90" width="240" height="170" rx="8" fill="#0f172a" stroke="#0284c7" stroke-width="2" />
+  <rect x="300" y="90" width="240" height="34" rx="8" fill="#0369a1" fill-opacity="0.3" />
+  <text x="315" y="113" font-family="'JetBrains Mono', monospace" font-size="12" fill="#38bdf8" font-weight="bold">02 :: LSTM ARCHITECTURE</text>
+  <text x="315" y="145" font-family="'JetBrains Mono', monospace" font-size="11" fill="#f8fafc">• 2x Stacked LSTM Layers (128 units)</text>
+  <text x="315" y="167" font-family="'JetBrains Mono', monospace" font-size="11" fill="#f8fafc">• Dropout (0.2) Regularization</text>
+  <text x="315" y="189" font-family="'JetBrains Mono', monospace" font-size="11" fill="#38bdf8">• Adam Optimizer + MSE Loss</text>
+  <text x="315" y="211" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94a3b8">• Backprop Through Time (BPTT)</text>
+  <text x="315" y="233" font-family="'JetBrains Mono', monospace" font-size="10" fill="#10b981">Recurrent Gate Cell Tuning</text>
+
+  <!-- Flow 2 to 3 -->
+  <path d="M 540 175 L 590 175" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 4" />
+  <polygon points="590,171 600,175 590,179" fill="#38bdf8" />
+
+  <!-- Flow Block 3: Portfolio Optimization & GUI -->
+  <rect x="600" y="100" width="160" height="150" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+  <rect x="600" y="100" width="160" height="32" rx="8" fill="#1e293b" />
+  <text x="615" y="122" font-family="'JetBrains Mono', monospace" font-size="12" fill="#38bdf8" font-weight="bold">03 :: PORTFOLIO</text>
+  <text x="615" y="152" font-family="'JetBrains Mono', monospace" font-size="11" fill="#cbd5e1">• Genetic / Evolutionary Opt</text>
+  <text x="615" y="174" font-family="'JetBrains Mono', monospace" font-size="11" fill="#cbd5e1">• Sharpe Ratio Weighting</text>
+  <text x="615" y="196" font-family="'JetBrains Mono', monospace" font-size="11" fill="#cbd5e1">• Interactive Tkinter UI</text>
+  <text x="615" y="218" font-family="'JetBrains Mono', monospace" font-size="11" fill="#cbd5e1">• Real-Time Curve Overlay</text>
+
+  <!-- Bottom Panel: Prediction Curve Telemetry -->
+  <rect x="40" y="280" width="720" height="170" rx="8" fill="#0a0f1d" stroke="#1e293b" stroke-width="1" />
+
+  <g transform="translate(60, 305)">
+    <text x="0" y="15" font-family="'JetBrains Mono', monospace" font-size="11" fill="#38bdf8" font-weight="bold">LSTM PREDICTIVE RECONSTRUCTION</text>
+    <text x="0" y="38" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94a3b8">Actual Historical Curve (Cyan) vs LSTM Forecast Output (Green)</text>
+    
+    <!-- Coordinate axis -->
+    <line x1="0" y1="120" x2="680" y2="120" stroke="#334155" stroke-width="1" />
+    <line x1="0" y1="50" x2="0" y2="120" stroke="#334155" stroke-width="1" />
+    
+    <!-- Historical curve -->
+    <path d="M 0 100 Q 80 115, 160 85 T 320 60 T 440 90 T 520 65" fill="none" stroke="#38bdf8" stroke-width="2.2" />
+    
+    <!-- Predicted curve with continuation -->
+    <path d="M 520 65 Q 560 55, 600 50 T 680 42" fill="none" stroke="#10b981" stroke-width="2.5" stroke-dasharray="3 3" />
+    <circle cx="520" cy="65" r="4" fill="#38bdf8" />
+    <text x="525" y="85" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38bdf8">T=0 Horizon</text>
+    <circle cx="680" cy="42" r="4" fill="#10b981" />
+    <text x="600" y="35" font-family="'JetBrains Mono', monospace" font-size="10" fill="#10b981" font-weight="bold">Predicted Trajectory</text>
+  </g>
+</svg>

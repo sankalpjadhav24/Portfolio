@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="javaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09131e" />
+      <stop offset="100%" stop-color="#040912" />
+    </linearGradient>
+    <pattern id="javaGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.7" stroke-opacity="0.4" />
+    </pattern>
+  </defs>
+
+  <rect width="800" height="480" fill="url(#javaBg)" />
+  <rect width="800" height="480" fill="url(#javaGrid)" />
+
+  <!-- Technical Header Bar -->
+  <rect x="30" y="24" width="740" height="44" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1.2" />
+  <circle cx="56" cy="46" r="5" fill="#ef4444" />
+  <circle cx="74" cy="46" r="5" fill="#f59e0b" />
+  <circle cx="92" cy="46" r="5" fill="#10b981" />
+  <text x="120" y="50" font-family="'JetBrains Mono', monospace" font-size="13" fill="#94a3b8">backend_architecture :: java_servlets_mvc.sys</text>
+  <rect x="635" y="34" width="120" height="24" rx="4" fill="#0284c7" fill-opacity="0.25" stroke="#38bdf8" stroke-width="0.8" />
+  <text x="695" y="50" font-family="'JetBrains Mono', monospace" font-size="11" fill="#38bdf8" text-anchor="middle" font-weight="600">APACHE TOMCAT</text>
+
+  <!-- Box 1: View / Client -->
+  <rect x="40" y="100" width="200" height="170" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+  <rect x="40" y="100" width="200" height="32" rx="8" fill="#1e293b" />
+  <text x="55" y="122" font-family="'JetBrains Mono', monospace" font-size="12" fill="#38bdf8" font-weight="bold">VIEW / CLIENT</text>
+  <text x="55" y="152" font-family="'JetBrains Mono', monospace" font-size="11" fill="#cbd5e1">• HTTP GET / POST</text>
+  <text x="55" y="174" font-family="'JetBrains Mono', monospace" font-size="11" fill="#cbd5e1">• Form Request Data</text>
+  <text x="55" y="196" font-family="'JetBrains Mono', monospace" font-size="11" fill="#cbd5e1">• Session Cookie Auth</text>
+  <text x="55" y="218" font-family="'JetBrains Mono', monospace" font-size="11" fill="#cbd5e1">• Dynamic HTML Rendering</text>
+  <text x="55" y="246" font-family="'JetBrains Mono', monospace" font-size="10" fill="#64748b">Presentation Layer</text>
+
+  <!-- Flow 1 to 2 -->
+  <path d="M 240 180 L 290 180" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 4" />
+  <polygon points="290,176 300,180 290,184" fill="#38bdf8" />
+
+  <!-- Box 2: Controller Servlets -->
+  <rect x="300" y="90" width="210" height="190" rx="8" fill="#0f172a" stroke="#0284c7" stroke-width="2" />
+  <rect x="300" y="90" width="210" height="34" rx="8" fill="#0369a1" fill-opacity="0.3" />
+  <text x="315" y="113" font-family="'JetBrains Mono', monospace" font-size="12" fill="#38bdf8" font-weight="bold">CONTROLLER (SERVLET)</text>
+  <text x="315" y="145" font-family="'JetBrains Mono', monospace" font-size="11" fill="#f8fafc">• HttpServlet Request</text>
+  <text x="315" y="167" font-family="'JetBrains Mono', monospace" font-size="11" fill="#f8fafc">• RequestDispatcher</text>
+  <text x="315" y="189" font-family="'JetBrains Mono', monospace" font-size="11" fill="#38bdf8">• HttpSession Tracking</text>
+  <text x="315" y="211" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94a3b8">• Input Validation Logic</text>
+  <text x="315" y="233" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94a3b8">• Exception Handling</text>
+  <text x="315" y="258" font-family="'JetBrains Mono', monospace" font-size="10" fill="#10b981">Apache Tomcat Runtime</text>
+
+  <!-- Flow 2 to 3 -->
+  <path d="M 510 180 L 560 180" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 4" />
+  <polygon points="560,176 570,180 560,184" fill="#38bdf8" />
+
+  <!-- Box 3: Model & Database -->
+  <rect x="570" y="100" width="190" height="170" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+  <rect x="570" y="100" width="190" height="32" rx="8" fill="#1e293b" />
+  <text x="585" y="122" font-family="'JetBrains Mono', monospace" font-size="12" fill="#38bdf8" font-weight="bold">MODEL &amp; DATABASE</text>
+  <text x="585" y="152" font-family="'JetBrains Mono', monospace" font-size="11" fill="#cbd5e1">• JDBC Connection Pool</text>
+  <text x="585" y="174" font-family="'JetBrains Mono', monospace" font-size="11" fill="#cbd5e1">• PreparedStatement SQL</text>
+  <text x="585" y="196" font-family="'JetBrains Mono', monospace" font-size="11" fill="#cbd5e1">• MySQL Relational 3NF</text>
+  <text x="585" y="218" font-family="'JetBrains Mono', monospace" font-size="11" fill="#cbd5e1">• ACID Transactions</text>
+  <text x="585" y="246" font-family="'JetBrains Mono', monospace" font-size="10" fill="#64748b">Persistence Layer</text>
+
+  <!-- Bottom Terminal / Specifications -->
+  <rect x="40" y="305" width="720" height="145" rx="8" fill="#09101d" stroke="#1e293b" stroke-width="1" />
+  <rect x="40" y="305" width="720" height="28" rx="8" fill="#111c2e" />
+  <text x="55" y="324" font-family="'JetBrains Mono', monospace" font-size="11" fill="#64748b">ARCHITECTURE SUMMARY &amp; METRICS</text>
+
+  <rect x="60" y="348" width="150" height="85" rx="6" fill="#0f172a" stroke="#1e293b" />
+  <text x="75" y="375" font-family="'JetBrains Mono', monospace" font-size="18" fill="#38bdf8" font-weight="bold">MVC</text>
+  <text x="75" y="398" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94a3b8">Clean Separation</text>
+  <text x="75" y="416" font-family="'JetBrains Mono', monospace" font-size="10" fill="#64748b">Zero Business Leak</text>
+
+  <rect x="230" y="348" width="150" height="85" rx="6" fill="#0f172a" stroke="#1e293b" />
+  <text x="245" y="375" font-family="'JetBrains Mono', monospace" font-size="18" fill="#10b981" font-weight="bold">JDBC</text>
+  <text x="245" y="398" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94a3b8">Parameterized</text>
+  <text x="245" y="416" font-family="'JetBrains Mono', monospace" font-size="10" fill="#64748b">SQL Injection Safe</text>
+
+  <rect x="400" y="348" width="150" height="85" rx="6" fill="#0f172a" stroke="#1e293b" />
+  <text x="415" y="375" font-family="'JetBrains Mono', monospace" font-size="18" fill="#f59e0b" font-weight="bold">3NF</text>
+  <text x="415" y="398" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94a3b8">Normalized Schema</text>
+  <text x="415" y="416" font-family="'JetBrains Mono', monospace" font-size="10" fill="#64748b">MySQL Integrity</text>
+
+  <rect x="570" y="348" width="170" height="85" rx="6" fill="#0f172a" stroke="#1e293b" />
+  <text x="585" y="375" font-family="'JetBrains Mono', monospace" font-size="18" fill="#a855f7" font-weight="bold">TOMCAT</text>
+  <text x="585" y="398" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94a3b8">Servlet Container</text>
+  <text x="585" y="416" font-family="'JetBrains Mono', monospace" font-size="10" fill="#64748b">Session Lifecycle</text>
+</svg>

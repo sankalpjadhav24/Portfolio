@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <linearGradient id="gridGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.01" />
+    </linearGradient>
+    <pattern id="archGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.3" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="480" fill="url(#bgGrad)" />
+  <rect width="800" height="480" fill="url(#archGrid)" />
+
+  <!-- Technical Header Bar -->
+  <rect x="30" y="24" width="740" height="44" rx="8" fill="#131c31" stroke="#1e293b" stroke-width="1.2" />
+  <circle cx="56" cy="46" r="5" fill="#ef4444" />
+  <circle cx="74" cy="46" r="5" fill="#f59e0b" />
+  <circle cx="92" cy="46" r="5" fill="#10b981" />
+  <text x="120" y="50" font-family="'JetBrains Mono', monospace" font-size="13" fill="#94a3b8" letter-spacing="0.5">mindwar_engine :: core_loop [Minimax + AlphaBeta] :: 9 Games</text>
+  <rect x="660" y="34" width="94" height="24" rx="4" fill="#0369a1" fill-opacity="0.2" stroke="#0ea5e9" stroke-width="0.8" />
+  <text x="707" y="50" font-family="'JetBrains Mono', monospace" font-size="11" fill="#38bdf8" text-anchor="middle" font-weight="600">DETERMINISTIC</text>
+
+  <!-- Architecture Flow -->
+  <!-- Module 1: Board State Engine -->
+  <rect x="40" y="100" width="200" height="150" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+  <rect x="40" y="100" width="200" height="32" rx="8" fill="#1e293b" />
+  <text x="56" y="122" font-family="'JetBrains Mono', monospace" font-size="12" fill="#38bdf8" font-weight="bold">01 :: STATE MANAGER</text>
+  <text x="56" y="152" font-family="'JetBrains Mono', monospace" font-size="11" fill="#cbd5e1">• 9 Strategy Rulesets</text>
+  <text x="56" y="174" font-family="'JetBrains Mono', monospace" font-size="11" fill="#cbd5e1">• Turn Validation Loop</text>
+  <text x="56" y="196" font-family="'JetBrains Mono', monospace" font-size="11" fill="#cbd5e1">• Immutable Bitboard Rep</text>
+  <text x="56" y="218" font-family="'JetBrains Mono', monospace" font-size="11" fill="#cbd5e1">• Automated Unit Invariants</text>
+
+  <!-- Connection line 1 to 2 -->
+  <path d="M 240 175 L 290 175" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 4" />
+  <polygon points="290,171 300,175 290,179" fill="#38bdf8" />
+
+  <!-- Module 2: Minimax Alpha-Beta Pruning Engine -->
+  <rect x="300" y="90" width="240" height="170" rx="8" fill="#0f172a" stroke="#0284c7" stroke-width="2" />
+  <rect x="300" y="90" width="240" height="34" rx="8" fill="#0369a1" fill-opacity="0.3" />
+  <text x="316" y="113" font-family="'JetBrains Mono', monospace" font-size="13" fill="#38bdf8" font-weight="bold">02 :: HEURISTIC SEARCH TREE</text>
+  <text x="316" y="145" font-family="'JetBrains Mono', monospace" font-size="11" fill="#f8fafc">• Minimax Decision Operator</text>
+  <text x="316" y="167" font-family="'JetBrains Mono', monospace" font-size="11" fill="#f8fafc">• α-β Pruning Optimization</text>
+  <text x="316" y="189" font-family="'JetBrains Mono', monospace" font-size="11" fill="#38bdf8">• Dynamic Depth Adaptation</text>
+  <text x="316" y="211" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94a3b8">• Heuristic Position Weighting</text>
+  <text x="316" y="233" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94a3b8">• Branch Factor Reduction: ~65%</text>
+
+  <!-- Connection line 2 to 3 -->
+  <path d="M 540 175 L 590 175" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 4" />
+  <polygon points="590,171 600,175 590,179" fill="#38bdf8" />
+
+  <!-- Module 3: Execution & Visual Driver -->
+  <rect x="600" y="100" width="160" height="150" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+  <rect x="600" y="100" width="160" height="32" rx="8" fill="#1e293b" />
+  <text x="614" y="122" font-family="'JetBrains Mono', monospace" font-size="12" fill="#38bdf8" font-weight="bold">03 :: DISPATCH</text>
+  <text x="614" y="152" font-family="'JetBrains Mono', monospace" font-size="11" fill="#cbd5e1">• Pygame Renderer</text>
+  <text x="614" y="174" font-family="'JetBrains Mono', monospace" font-size="11" fill="#cbd5e1">• ModernGL/OpenGL</text>
+  <text x="614" y="196" font-family="'JetBrains Mono', monospace" font-size="11" fill="#cbd5e1">• Event Dispatcher</text>
+  <text x="614" y="218" font-family="'JetBrains Mono', monospace" font-size="11" fill="#cbd5e1">• 60 FPS Target Loop</text>
+
+  <!-- Bottom Panel: Real-time decision tree visualization -->
+  <rect x="40" y="280" width="720" height="170" rx="8" fill="#0a0f1d" stroke="#1e293b" stroke-width="1" />
+  
+  <!-- Tree nodes -->
+  <!-- Root -->
+  <circle cx="400" cy="315" r="14" fill="#0284c7" stroke="#38bdf8" stroke-width="2" />
+  <text x="400" y="320" font-family="'JetBrains Mono', monospace" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold">MAX</text>
+  
+  <!-- Level 1 branches -->
+  <line x1="400" y1="329" x2="250" y2="365" stroke="#38bdf8" stroke-width="1.5" />
+  <line x1="400" y1="329" x2="400" y2="365" stroke="#38bdf8" stroke-width="1.5" />
+  <line x1="400" y1="329" x2="550" y2="365" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="3 3" />
+
+  <!-- Level 1 nodes -->
+  <circle cx="250" cy="375" r="12" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+  <text x="250" y="379" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8" text-anchor="middle">MIN</text>
+
+  <circle cx="400" cy="375" r="12" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+  <text x="400" y="379" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8" text-anchor="middle">MIN</text>
+
+  <circle cx="550" cy="375" r="12" fill="#1e293b" stroke="#ef4444" stroke-width="1.5" />
+  <text x="550" y="379" font-family="'JetBrains Mono', monospace" font-size="9" fill="#ef4444" text-anchor="middle">PRUNED</text>
+  <text x="600" y="379" font-family="'JetBrains Mono', monospace" font-size="10" fill="#ef4444">α ≥ β cut-off</text>
+
+  <!-- Level 2 sub-branches -->
+  <line x1="250" y1="387" x2="180" y2="415" stroke="#475569" stroke-width="1" />
+  <line x1="250" y1="387" x2="250" y2="415" stroke="#475569" stroke-width="1" />
+  <line x1="250" y1="387" x2="310" y2="415" stroke="#38bdf8" stroke-width="1.5" />
+  
+  <rect x="165" y="415" width="30" height="18" rx="3" fill="#1e293b" stroke="#475569" />
+  <text x="180" y="428" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8" text-anchor="middle">+14</text>
+  
+  <rect x="235" y="415" width="30" height="18" rx="3" fill="#1e293b" stroke="#475569" />
+  <text x="250" y="428" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8" text-anchor="middle">+8</text>
+
+  <rect x="295" y="415" width="30" height="18" rx="3" fill="#0369a1" stroke="#38bdf8" />
+  <text x="310" y="428" font-family="'JetBrains Mono', monospace" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="bold">+42*</text>
+
+  <!-- Annotation -->
+  <text x="60" y="315" font-family="'JetBrains Mono', monospace" font-size="11" fill="#38bdf8" font-weight="bold">ALGORITHM TELEMETRY</text>
+  <text x="60" y="335" font-family="'JetBrains Mono', monospace" font-size="10" fill="#64748b">Search Depth: 6 Plies</text>
+  <text x="60" y="352" font-family="'JetBrains Mono', monospace" font-size="10" fill="#64748b">Branch Pruning: Active</text>
+  <text x="60" y="369" font-family="'JetBrains Mono', monospace" font-size="10" fill="#10b981">Optimal Move: [2, 4] -> score +42</text>
+</svg>
